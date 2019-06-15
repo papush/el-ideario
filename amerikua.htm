@@ -1,0 +1,41 @@
+<html>
+<head>
+<title>Finca Amerikua</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta charset="utf-8">
+<link rel="stylesheet" href="nexostyle.css">
+</head>
+<body>
+  <section>
+  <div align="center">
+<img src="img/index.jpeg" alt="Finca Amerikua" style="max-width:300px">
+<br>
+<h2>Dirección:</h2>
+<img alt="Google Maps" src="img/googlemaps.png" style="width:90px;cursor:pointer" onclick="mapsSelector()">
+<a target="_blank" href="https://www.waze.com/ul?ll=9.88545694%2C-83.91083837&navigate=yes&zoom=16"><img width="100px" src="img/waze.png" alt="Waze"></a>
+
+</div>
+  </section>
+<script type="text/javascript">
+function mapsSelector() {
+  if /* if we're on iOS, open in Apple Maps */
+    ((navigator.platform.indexOf("iPhone") != -1) ||
+     (navigator.platform.indexOf("iPad") != -1) ||
+     (navigator.platform.indexOf("iPod") != -1))
+    window.open("http://maps.apple.com/maps?daddr=9.8853688,-83.9108005&amp;ll=");
+
+  var isAndroid = /android/i.test(navigator.userAgent.toLowerCase());
+
+    if (isAndroid)
+    {
+      window.open("geo:0,0?q=9.8853688,-83.9108005(Finca Amerikua)");
+    }
+
+  else /* else use Google */
+    window.open("http://maps.google.com/maps?daddr=9.8853688,-83.9108005&amp;ll=");
+}
+</script>
+</body>
+</html>
