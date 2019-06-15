@@ -1,0 +1,81 @@
+<html>
+<head>
+<title>Masc. Diversas</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta charset="utf-8">
+<link rel="stylesheet" href="../nexostyle.css">
+</head>
+<body>
+
+
+<div align="center">
+<section>
+<h1>Masculinidades Diversas</h1>
+<img class="logo" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSItNViEMSCcQ9Rm_Bjbn5vkrSnqn8LzQOSBYLM36S8oFF0fuHw" alt="-">
+
+<p>Somos un grupo que busca reflexionar sobre las masculinidades de los hombres sexualmente diversos, para deconstruirnos y apoyarnos.</p>
+<h3>Acciones:</h3>
+<ul>
+  <li>Organizar conversatorios para profundizar en temas de sexualidad desde lo masculino.</li>
+
+</ul>
+
+<table>
+  <tr>
+    <td>Participación:</td>
+    <td>Abierta - Asistir a conversatorios</td>
+  </tr>
+    <tr>
+    <td>Correo electrónico:</td>
+    <td>masculinidadesdiversas@gmail.com</td>
+  </tr>
+
+</table>
+
+          <div class="redes">
+            <a target="_blank" href="https://www.facebook.com/masculinidadesdiversas/"><img class="redes" src="../img/fb.png" alt="facebook link"></a>
+            <a target="_blank" href="https://www.instagram.com/masculinidadesdiversas/"><img class="redes" src="../img/inst.png" alt="instagram"></a>
+            <a hidden target="_blank" href="#"><img class="redes" src="../img/whtspp.png" alt="whatsapp"></a>
+            <a hidden target="_blank" onclick="mapsSelector()"><img class="redes" src="../img/gglmps.png" alt="maps link"></a>
+            <a hidden target="_blank" href="#"><img class="redes" src="../img/ytb.png" alt="youtube"></a>
+          </div>
+          <br>
+
+
+          <button class="accordion3">más información</button>
+            <div class="panel">
+<p>no hay mas información disponible</p>
+            </div>
+
+</div>
+<div class="back">
+  <a href="javascript:history.back()"><img class="back" src="../img/back.png" alt="back"></a>
+</div>
+</section>
+</div>
+
+
+<script type="text/javascript" src=../scripts/accordion3.js></script>
+<script type="text/javascript">
+function mapsSelector() {
+  if /* if we're on iOS, open in Apple Maps */
+    ((navigator.platform.indexOf("iPhone") != -1) ||
+     (navigator.platform.indexOf("iPad") != -1) ||
+     (navigator.platform.indexOf("iPod") != -1))
+    window.open("http://maps.apple.com/maps?daddr=9.887530,-84.157895&amp;ll=");
+
+  var isAndroid = /android/i.test(navigator.userAgent.toLowerCase());
+
+    if (isAndroid)
+    {
+      window.open("geo:0,0?q=9.887530,-84.157895(Aquí)");
+    }
+
+  else /* else use Google */
+    window.open("http://maps.google.com/maps?daddr=9.887530,-84.157895&amp;ll=");
+}
+</script>
+</body>
+</html>
