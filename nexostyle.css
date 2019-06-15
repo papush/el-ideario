@@ -434,6 +434,10 @@ audio{
     width:auto;
   }
 
+  img.geo{
+    width:100px;
+  }
+
   img.logo{
     float:none;
     max-width: 80%;
