@@ -1,0 +1,56 @@
+<html>
+<head>
+<title>Masa Crítica Cartago</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta charset="utf-8">
+<link rel="stylesheet" href="nexostyle.css">
+</head>
+<body>
+
+
+<div align="center">
+<section>
+<h1>Masa Crítica - Cartago</h1>
+
+<iframe width="100%" height="700px" src="https://www.criticalmaps.net/map-embed" frameborder="0" allowfullscreen></iframe>
+<p>Descargar la app <a target="_blank" href="https://www.criticalmaps.net/">Critical Maps</a> para emitir tu localización y poder encontrar a lxs demás durante la masa </p>
+
+
+          <button class="accordion3">¿Que es la Masa Crítica?</button>
+            <div class="panel">
+              <iframe src="https://youtu.be/UlF31YwbR6E?t=35" width="100%" height="auto"></iframe>
+
+
+            </div>
+
+
+</div>
+
+</section>
+</div>
+
+
+<script type="text/javascript" src=scripts/accordion3.js></script>
+<script type="text/javascript">
+function mapsSelector() {
+  if /* if we're on iOS, open in Apple Maps */
+    ((navigator.platform.indexOf("iPhone") != -1) ||
+     (navigator.platform.indexOf("iPad") != -1) ||
+     (navigator.platform.indexOf("iPod") != -1))
+    window.open("http://maps.apple.com/maps?daddr=9.887530,-84.157895&amp;ll=");
+
+  var isAndroid = /android/i.test(navigator.userAgent.toLowerCase());
+
+    if (isAndroid)
+    {
+      window.open("geo:0,0?q=9.887530,-84.157895(Aquí)");
+    }
+
+  else /* else use Google */
+    window.open("http://maps.google.com/maps?daddr=9.887530,-84.157895&amp;ll=");
+}
+</script>
+</body>
+</html>
