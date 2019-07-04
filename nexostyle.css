@@ -242,7 +242,8 @@ button.accordion2.active, button.accordion2:hover {
 }
 
 button.accordion3 {
-  display: inline-block;
+  display: block;
+  align-self: center;
   background:#62FF79;
   padding: 5px;
   width:auto;
