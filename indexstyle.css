@@ -352,6 +352,41 @@ button.caos:hover{
   transition: 1s;
 }
 
+div.ideacontainer{
+  display:block;
+}
+
+div.bubble{
+  background-color: #b2b2b2;
+  border-radius: 7px;
+}
+
+button.idea:hover {
+background-image: radial-gradient(#525252 , #404040);
+color:#00B6F0;
+-ms-transform: scale(1.09); /* IE 9 */
+ -webkit-transform: scale(1.09); /* Safari 3-8 */
+ transform: scale(1.09);
+}
+
+a.idea{
+  color: #62FF79
+}
+
+button.idea {
+  background-color: #404040;
+  color: #62FF79;
+  font-family: monospace;
+  border-radius: 60px;
+  text-align: center;
+  border: none;
+  margin: 10px;
+  padding: 12px;
+  padding-top: 15px;
+  width: 120px;
+  height: 120px;
+  transition: transform .2s;
+}
 div.filtrodiv {
   background-color: #797979;
   border-radius: 15px;
@@ -500,6 +535,12 @@ audio{
   }
 
   button.btn:hover{
+    background-color:#00B6F0;
+    color: #004257;
+    outline: 0 !important;
+  }
+
+  button.idea:hover{
     background-color:#00B6F0;
     color: #004257;
     outline: 0 !important;

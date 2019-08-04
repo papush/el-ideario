@@ -121,17 +121,20 @@ section{
 
 input[type=submit] {
   text-decoration: none;
-  font-size: 130%;
-  padding: 3px;
+  font-size: 140%;
+  font-family: monospace;
+  padding: 5px;
   color: #000;
-  background-color: #DFDFDF;
+  background-color:#62FF79;
   text-align: center;
-  outline: 1px solid #797979;
+  border: none;
+  border-radius: 5px;
+  outline: 0px solid  #62FF79;
 }
 
 
 input[type=submit]:hover {
-background-color: #62FF79
+background-color: #00B6F0;
 }
 
 input[type=url], select {
@@ -144,12 +147,16 @@ input[type=url], select {
     box-sizing: border-box;
 }
 input[type=text], select {
-    max-width: 300%;
+    max-width: 100%;
+    text-align: center;
     padding: 12px 20px;
     margin: 8px 0;
     display: inline-block;
-    border: 1px solid #000;
+    border: 1px solid  #62FF79;
     border-radius: 4px;
+    color: #00B6F0;
+    font-size: 100%;
+    background-color: #000;
     box-sizing: border-box;
 }
 
@@ -280,6 +287,22 @@ button.caos:hover{
   background-color:#EA69F2;
   border: solid 0px #000;
   transition: 1s;
+}
+
+div.Bbubble{
+  background-color: #171717;
+  color:#62FF79;
+  font-family: monospace;
+  font-size: 12  0%;
+  border-radius: 21px;
+  padding: 7px;
+  margin:10px;
+  max-width: 315px;
+  text-align: center;
+}
+
+div.center {
+  text-align: center;
 }
 
 div.redes{

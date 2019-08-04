@@ -6,6 +6,7 @@
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta charset="utf-8">
 <link rel="stylesheet" href="indexstyle.css">
+<link rel="stylesheet" type="text/css" href="overlay.css">
 <script>
 function resizeIframe(obj) {
   obj.style.height = obj.contentWindow.document.body.scrollHeight + 'px';
@@ -26,8 +27,38 @@ function resizeIframe(obj) {
   </nav>
 
 <div align=center>
-  <div class="container">
+  <div class="container2">
     <section style="height:100%;padding-left:0px">
+
+
+
+<div class="ideacontainer">
+  <button class="idea"><a class="idea" href="#"><strong>C.I.S.</strong><br>Colectiva de Investigación subversiva</a></button>
+    <button class="idea"><span onclick="openNav1()" style="cursor:pointer">GAM FRUTAL</span></button>
+  <button class="idea"><a class="idea" href="#">Red de Acceso a Tierra y Mutualismo</a></button>
+  <button class="idea"><a class="idea" href="#">Activación Cultural Cartago</a></button>
+</div>
+
+
+<div id="myNav1" class="overlay">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav1()">&times;</a>
+      <div class="overlay-content">
+        
+        <h1 class="overlad" style="color:white;font-size:300%">iOS</h1>
+        <h1 class="overlad">(iPhone, iPad, iPod)</h1>
+        <p>Para dispositivos iOS todavia no hay aplicación, pero podés agregar el ideario a tu pantalla de inicio siguiendo los siguientes pasos:</p>
+          <ol style="color:white">
+            <li>Abrir ideario.net en Safari, el navegador oficial de iOS <br><img src="img/safari.png"><br><br></li>
+            <li>Dale click al siguiente boton:<br><img alt=boton src="img/button.jpeg"><br><br></li>
+            <li>Dale al boton con un + "add to homescreen" o "agregar a pantalla de incio"<br><img src="img/homescreen.png"><br><br></li>
+          </ol>
+      </div>
+    </div>
+
+
+</div>
+</div>
+<div hidden class="hide">
       <button class="accordion3">subir una idea!</button>
         <div class="panel">
             <form id="form1" action="https://formspree.io/el-ideario@riseup.net" method="POST">
@@ -43,6 +74,7 @@ function resizeIframe(obj) {
 
         <iframe style="border:0px;width:100%;" src="content/ideas.htm" scrolling="no" onload="resizeIframe(this)" allowFullScreen></iframe>
 
+</div>
     </section>
   </div>
 </div>
