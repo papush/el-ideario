@@ -18,46 +18,50 @@ function resizeIframe(obj) {
     <a href="index.htm"><img class="header" src="img/ideario.png" alt=header></a>
     <p class="slogan" title="que es el ideario?">Plataforma de inteligencia colectiva<br> las ideas nos unen</p>
   </header>
+
   <nav style="font-family:sans;">
       <ul>
-        <a href="nexos.htm"><li>Nexos</li></a>
-          <a href="https://t.me/s/ideario_eventos"><li>Eventos</li></a>
+          <a href="nexos.htm"><li>Nexos</li></a>
+          <a class="eventpc" target="_blank" href="https://t.me/s/ideario_eventos"><li>Eventos</li></a>
+          <a class="eventmobile" href="https://t.me/s/ideario_eventos"><li>Eventos</li></a>
           <a href="ideas.htm"><li class="active">Ideas</li></a>
       </ul>
   </nav>
 
 <div align=center>
-  <div class="container2">
+  <div class="container2" style="border-radius:50px;max-width:600px">
     <section style="height:100%;padding-left:0px">
 
-
-
 <div class="ideacontainer">
-  <button class="idea"><a class="idea" href="#"><strong>C.I.S.</strong><br>Colectiva de Investigación subversiva</a></button>
-    <button class="idea"><span onclick="openNav1()" style="cursor:pointer">GAM FRUTAL</span></button>
-  <button class="idea"><a class="idea" href="#">Red de Acceso a Tierra y Mutualismo</a></button>
-  <button class="idea"><a class="idea" href="#">Activación Cultural Cartago</a></button>
+  <span class="idea" onclick="openNav1()" style="cursor:pointer">  <button class="idea"><strong>C.I.S.</strong><br>Colectiva de Investigación subversiva</button></span>
+  <span class="idea" onclick="openNav2()" style="cursor:pointer">  <button class="idea">GAM Frutal</button></span>
+  <span class="idea" onclick="openNav3()" style="cursor:pointer">  <button class="idea">Red de Acceso a Tierra y Mutualismo</span>
+
 </div>
 
+
+
+
+
+</div>
+</div>
 
 <div id="myNav1" class="overlay">
       <a href="javascript:void(0)" class="closebtn" onclick="closeNav1()">&times;</a>
-      <div class="overlay-content">
-        
-        <h1 class="overlad" style="color:white;font-size:300%">iOS</h1>
-        <h1 class="overlad">(iPhone, iPad, iPod)</h1>
-        <p>Para dispositivos iOS todavia no hay aplicación, pero podés agregar el ideario a tu pantalla de inicio siguiendo los siguientes pasos:</p>
-          <ol style="color:white">
-            <li>Abrir ideario.net en Safari, el navegador oficial de iOS <br><img src="img/safari.png"><br><br></li>
-            <li>Dale click al siguiente boton:<br><img alt=boton src="img/button.jpeg"><br><br></li>
-            <li>Dale al boton con un + "add to homescreen" o "agregar a pantalla de incio"<br><img src="img/homescreen.png"><br><br></li>
-          </ol>
+      <div class="overlay-content" style="max-width:600px;font-family:monospace;font-size:115%;">
+        <h1 class="overlad" style="color:#62FF79;font-size:300%">C.I.S.</h1>
+        <h3 class="overlad">Colectiva de Investigación Subversiva</h3>
+        <p>Colectiva de participación abierta y voluntaria, su labor específica es la recolección de datos en investigación de campo para obtener información relevante a la hora de plantear estrategias de subversión y transformación social.</p>
+        <p>Investigaciónes en Curso:</p>
+        <ol>
+          <li><a  href="#">Investigación por el Acceso a la Tierra</a></li>
+          <li><a  href="#">Mapeo de Arboles Frutales en espacios públicos (GAM Frutal)</a></li>
+        </ol>
+
+        <p>Participar: t.me/CISideario</p>
       </div>
     </div>
 
-
-</div>
-</div>
 <div hidden class="hide">
       <button class="accordion3">subir una idea!</button>
         <div class="panel">
@@ -84,6 +88,9 @@ function resizeIframe(obj) {
   <a href="index.htm"><img src="img/globe.png" alt=portal class="lang"></a>
 </div>
 
+
+<script type="text/javascript" src="scripts/overlay.js"></script>
+
 <script>
 var acc = document.getElementsByClassName("accordion3");
 var i;
@@ -100,5 +107,7 @@ for (i = 0; i < acc.length; i++) {
     }
 }
 </script>
+
+
 </body>
 </html>
