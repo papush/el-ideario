@@ -7,6 +7,16 @@ CHAT:
 TELEGRAM EVENT WIDGET:
 <iframe id="tgw_5cb9592b83ba888c068b4567" frameborder="0" scrolling="no" horizontalscrolling="no" verticalscrolling="no" width="100%" height="540px" async></iframe><script>document.addEventListener("DOMContentLoaded",function(){document.getElementById("tgw_5cb9592b83ba888c068b4567").setAttribute("src","https://tgwidget.com/channel/v2.0/?id=5cb9592b83ba888c068b4567")})</script>
 
+
+IDEA BALLS:
+
+<div class="ideacontainer">
+  <span class="idea" onclick="openNav1()" style="cursor:pointer">  <button class="idea"><strong>C.I.S.</strong><br>Colectiva de Investigación subversiva</button></span>
+  <span class="idea" onclick="openNav2()" style="cursor:pointer">  <button class="idea">Mapeo de Arboles Frutales</button></span>
+  <span class="idea" onclick="openNav3()" style="cursor:pointer">  <button class="idea">Red de Acceso a Tierra y Mutualismo</span>
+</div>
+
+
 PORTAL INDEX:
 
 <div class="portal2">

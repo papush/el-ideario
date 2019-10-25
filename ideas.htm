@@ -29,16 +29,17 @@ function resizeIframe(obj) {
   </nav>
 
 <div align=center>
-  <div class="container2" style="border-radius:50px;max-width:600px">
+  <div class="container2" style="max-width:600px">
     <section style="height:100%;padding-left:0px">
 
-<div class="ideacontainer">
-  <span class="idea" onclick="openNav1()" style="cursor:pointer">  <button class="idea"><strong>C.I.S.</strong><br>Colectiva de Investigación subversiva</button></span>
-  <span class="idea" onclick="openNav2()" style="cursor:pointer">  <button class="idea">GAM Frutal</button></span>
-  <span class="idea" onclick="openNav3()" style="cursor:pointer">  <button class="idea">Red de Acceso a Tierra y Mutualismo</span>
 
-</div>
 
+<div class="portal2">
+        <div class="portal">
+          <br><button class="caos" onclick="refreshIframe();"><img src="img/caos4.png" style="width:50px" alt="caos"></button>
+        </div>
+        <iframe width="100%" style="border:0px;height:100%;" name="portal" src="content/portal.htm" scrolling="no" onload="resizeIframe(this)" allowFullScreen></iframe>
+      </div>
 
 
 
@@ -51,14 +52,19 @@ function resizeIframe(obj) {
       <div class="overlay-content" style="max-width:600px;font-family:monospace;font-size:115%;">
         <h1 class="overlad" style="color:#62FF79;font-size:300%">C.I.S.</h1>
         <h3 class="overlad">Colectiva de Investigación Subversiva</h3>
-        <p>Colectiva de participación abierta y voluntaria, su labor específica es la recolección de datos en investigación de campo para obtener información relevante a la hora de plantear estrategias de subversión y transformación social.</p>
+        <p>Colectiva de participación abierta y voluntaria, con la función exclusiva de recolectar datos en investigaciónes de campo para obtener información relevante a la hora de plantear estrategias de subversión y transformación social.</p>
         <p>Investigaciónes en Curso:</p>
         <ol>
-          <li><a  href="#">Investigación por el Acceso a la Tierra</a></li>
-          <li><a  href="#">Mapeo de Arboles Frutales en espacios públicos (GAM Frutal)</a></li>
+          <li style="color:#62FF79">Investigación por el Acceso a la Tierra</li>
+            <ul>
+              <li>Estamos armando una base de datos con información sobre terrenos en abandono ó desuso. Averiguamos la información registral de cada terreno y así determinamos si es ó no es posible aprovechar este recurso desde el mutualismo, el alquiler colectivo ó bien la okupación legítima.</li>
+              <p><strong>¿Como participar?:</strong></p><p>Uniendose a la busqueda de terrenos y enviando las <strong>coordenadas</strong> de cada hallazgo a nuestro grupo de telegram:
+            </ul>
+          <li style="color:#62FF79">Mapeo de Arboles Frutales y flora comestible en espacios públicos de la GAM</li>
+            <p>Recolectar ubicaciones de arboles frutales y especies comestibles en la GAM. Para así crear un mapa que nos permita saber donde y cuando cosechar la comida que nos regala la madre tierra.</p>
+            <p>Empoderarnos</p>
         </ol>
 
-        <p>Participar: t.me/CISideario</p>
       </div>
     </div>
 
@@ -107,7 +113,12 @@ for (i = 0; i < acc.length; i++) {
     }
 }
 </script>
-
+<script>
+      function refreshIframe() {
+          var ifr = document.getElementsByName('portal')[0];
+          ifr.src = ifr.src;
+      }
+</script>
 
 </body>
 </html>
