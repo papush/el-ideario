@@ -1,0 +1,78 @@
+<html>
+<head>
+<title>Rincón Maleza - CSA</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta charset="utf-8">
+<link rel="stylesheet" href="../nexostyle.css">
+</head>
+<body>
+
+
+<div align="center">
+<section>
+<h1>Rincón Maleza</h1><h3>Centro Social Autogestionado</h3>
+<img class="logo" src="https://scontent.fsyq1-1.fna.fbcdn.net/v/t1.0-0/p370x247/67365278_500002944069360_914282860964216832_n.jpg?_nc_cat=103&_nc_oc=AQl3W6l13DimbOWcgZFFl7BJEK_7STwvgRZkJkSyyNVzZSUmHiPJHPzYkzCgLNrrBmU&_nc_ht=scontent.fsyq1-1.fna&oh=1c86d58cad6e401e742bfd9c5c10b2f6&oe=5E5BD3FA" alt="-">
+
+<p>Espacio en movimiento y expansión de grietas en la ciudad para construir aprendizajes, herramientas, luchas, encuentros, resistencias y propuestas desde lo común. Espacio para Talleres, Reuniones, Tertulias, Cuido Colectivo, Recreación...</p>
+<h3>Acciones:</h3>
+<ul>
+  <li>Abrir su espacio para Talleres, encuentros, cultura ...etc</li>
+  <li>Gestionar una agenda cultural de participación abierta, comunitaria e inclusiva.</li>
+</ul>
+
+<table>
+  <tr>
+    <td>Participación:</td>
+    <td>Abierta en eventos</td>
+  </tr>
+    <tr>
+    <td>Correo electrónico:</td>
+    <td>rinconmaleza@gmail.com</td>
+  </tr>
+</table>
+
+          <div class="redes">
+            <a target="_blank" href="https://www.facebook.com/pg/RinconMaleza/"><img class="redes" src="../img/fb.png" alt="facebook link"></a>
+            <a target="_blank" style="cursor:pointer" onclick="mapsSelector()"><img class="redes" src="../img/gglmps.png" alt="maps link"></a>
+          </div>
+          <br>
+
+
+          <button class="accordion3">más información</button>
+            <div class="panel">
+
+            </div>
+
+</div>
+<div class="back">
+  <a href="javascript:history.back()"><img class="back" src="../img/back.png" alt="back"></a>
+</div>
+</section>
+</div>
+
+
+<script type="text/javascript" src=../scripts/accordion3.js></script>
+<script type="text/javascript">
+function mapsSelector() {
+  if /* if we're on iOS, open in Apple Maps */
+    ((navigator.platform.indexOf("iPhone") != -1) ||
+     (navigator.platform.indexOf("iPad") != -1) ||
+     (navigator.platform.indexOf("iPod") != -1))
+    window.open("http://maps.apple.com/maps?daddr=9.929710,-84.076271&amp;ll=");
+
+
+  var isAndroid = /android/i.test(navigator.userAgent.toLowerCase());
+
+    if (isAndroid)
+    {
+      window.open("geo:0,0?q=9.929710,-84.076271(CSA - Rincón Maleza)");
+    }
+
+  else /* else use Google */
+    window.open("http://maps.google.com/maps?daddr=9.929710,-84.076271&amp;ll=");
+}
+</script>
+</body>
+</html>

@@ -32,18 +32,15 @@
               <td>Participación:</td>
               <td>Voluntariado - con opción de alojamiento</td>
             </tr>
-            <tr>
-              <td>Website</td>
-              <td></td>
-            </tr>
+
           </table>
 
           <div class="redes">
-            <a target="_target" href="#"><img class="redes" src="../img/fb.png" alt="facebook link"></a>
-            <a target="_target" href="#"><img class="redes" src="../img/inst.png" alt="instagram"></a>
-            <a target="_target" href="#"><img class="redes" src="../img/whtspp.png" alt="whatsapp"></a>
-            <a target="_target" onclick="mapsSelector()"><img class="redes" src="../img/gglmps.png" alt="maps link"></a>
-            <a target="_target" href="#"><img class="redes" src="../img/ytb.png" alt="youtube"></a>
+            <a target="_target" href="https://www.facebook.com/EcoTarcoles"><img class="redes" src="../img/fb.png" alt="facebook link"></a>
+            <a target="_target" href="https://www.instagram.com/ecotarcoles/"><img class="redes" src="../img/inst.png" alt="instagram"></a>
+            <a target="_target" href="https://wa.me/50683137042"><img class="redes" src="../img/whtspp.png" alt="whatsapp"></a>
+            <a target="_target" style="cursor:pointer" onclick="mapsSelector()"><img class="redes" src="../img/gglmps.png" alt="maps link"></a>
+
           </div>
           <br>
 
@@ -79,17 +76,17 @@ function mapsSelector() {
     ((navigator.platform.indexOf("iPhone") != -1) ||
      (navigator.platform.indexOf("iPad") != -1) ||
      (navigator.platform.indexOf("iPod") != -1))
-    window.open("http://maps.apple.com/maps?daddr=9.887530,-84.157895&amp;ll=");
+    window.open("http://maps.apple.com/maps?daddr=9.762024,-84.627213&amp;ll=");
 
   var isAndroid = /android/i.test(navigator.userAgent.toLowerCase());
 
     if (isAndroid)
     {
-      window.open("geo:0,0?q=9.887530,-84.157895(Aquí)");
+      window.open("geo:0,0?q=9.762024,-84.627213(Aquí)");
     }
 
   else /* else use Google */
-    window.open("http://maps.google.com/maps?daddr=9.887530,-84.157895&amp;ll=");
+    window.open("http://maps.google.com/maps?daddr=9.762024,-84.627213&amp;ll=");
 }
 </script>
 </body>

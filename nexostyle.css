@@ -388,6 +388,12 @@ img.logo{
   margin-bottom:10px;
 }
 
+iframe.logo{
+  max-width: 300px;
+  float:right;
+  margin-bottom:10px;
+}
+
 .container{
   max-width:1000px;
 }
@@ -463,6 +469,11 @@ audio{
   img.logo{
     float:none;
     max-width: 80%;
+  }
+
+  iframe.logo{
+    float:none;
+    max-width: 95%;
   }
 
   img.pablo{

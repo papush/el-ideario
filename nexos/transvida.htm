@@ -1,0 +1,90 @@
+<html>
+<head>
+<title>TransVida</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta charset="utf-8">
+<link rel="stylesheet" href="../nexostyle.css">
+</head>
+<body>
+
+
+<div align="center">
+<section>
+<h1>TransVida</h1>
+<img class="logo" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSluWyI_pTa_2FlXMJop5dO9bRHW74nexv3ZSh8jh3ayCx9MRE4ZA&s" alt="-">
+<iframe hidden class="logo" width="560" height="315" src="https://www.youtube.com/embed/gSGwfsVcumE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<p>La Asociación Transvida es la organización costarricense creada por y para las personas trans.</p>
+<h3>Acciones:</h3>
+<ul>
+  <li>Incidencia política</li>
+  <li>Coordinar Grupos de apoyo</li>
+  <li>Facilitar educación para personas trans</li>
+</ul>
+
+<table>
+  <tr>
+    <td>Participación:</td>
+    <td>Voluntariado - Donaciones - </td>
+  </tr>
+  <tr>
+    <td>Correo electrónico:</td>
+    <td>info@transvidacr.org</td>
+  </tr>
+  <tr>
+    <td>Telefono:</td>
+    <td>2221-7971</td>
+  </tr>
+  <tr>
+    <td>Sitio Web:</td>
+    <td><a href="https://transvidacr.org/">transvidacr.org/</a></td>
+  </tr>
+</table>
+
+          <div class="redes">
+            <a target="_blank" href="https://www.facebook.com/transvidacr"><img class="redes" src="../img/fb.png" alt="facebook link"></a>
+            <a style="cursor:pointer" target="_blank" onclick="mapsSelector()"><img class="redes" src="../img/gglmps.png" alt="maps link"></a>
+
+          </div>
+          <br>
+
+
+          <button class="accordion3">más información</button>
+            <div class="panel">
+              <p>La Asociación tiene contacto directo con 300 personas trans, quienes participan en en talleres, asisten a clases, a grupos de apoyo o son abordadas directamente por representantes de la Asociación.</p>
+              <p>Un número importante de estas personas son inmigrantes Centroamericanas y Suramericanas quienes buscan refugio en Costa Rica debido al rechazo y la violencia que, por su condición, sufren en sus lugares de origen.</p>
+              <p>Nuestros proyectos atienden a esta población de manera integral, contemplando apoyo psicológico, prevención, educación, apoyo jurídico y participación activa en política nacional para lograr incidencia en el tema de respeto a los Derechos Humanos de las personas trans. Todos nuestros servicios son brindados de manera gratuita.</p>
+              <p>Desde al año 2017, Transvida cuenta con personal contratado, el cual se desempeña en la articulación de todos los proyectos, cumple el rol de representación en reuniones y encuentros, asiste en la ejecución y genera acciones concretas. A este equipo se suma un número importante de voluntarios y personal pro-bono que desempeña diferentes tipos de labores: lecciones para quienes abandonaron sus estudios secundarios en la adolescencia y programas de formación en capacidades específicas, atención psicológica y asesoría legal, entre otros.</p>
+            </div>
+
+</div>
+<div class="back">
+  <a href="javascript:history.back()"><img class="back" src="../img/back.png" alt="back"></a>
+</div>
+</section>
+</div>
+
+
+<script type="text/javascript" src=../scripts/accordion3.js></script>
+<script type="text/javascript">
+function mapsSelector() {
+  if /* if we're on iOS, open in Apple Maps */
+    ((navigator.platform.indexOf("iPhone") != -1) ||
+     (navigator.platform.indexOf("iPad") != -1) ||
+     (navigator.platform.indexOf("iPod") != -1))
+    window.open("http://maps.apple.com/maps?daddr=9.923956,-84.078337&amp;ll=");
+
+  var isAndroid = /android/i.test(navigator.userAgent.toLowerCase());
+
+    if (isAndroid)
+    {
+      window.open("geo:0,0?q=9.923956,-84.078337(Aquí)");
+    }
+
+  else /* else use Google */
+    window.open("http://maps.google.com/maps?daddr=9.923956,-84.078337&amp;ll=");
+}
+</script>
+</body>
+</html>
