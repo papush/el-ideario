@@ -1,4 +1,15 @@
-
+body{
+  margin: 0;
+  padding: 0;
+  font-family:arial;
+  text-align: center;
+  image-orientation: center;
+  background-color: rgba(255, 255, 255, 0.4);
+  background-image: url(https://cdni.iconscout.com/illustration/premium/thumb/seamless-pattern-with-pink-leaves-on-white-background-1745803-1521042.png?f=webp);
+  background-repeat:;
+  background-attachment: scroll;
+  background-position: top;
+}
 header {
   background-color: white;
   background-color:rgb(247, 247, 247,0.7);
@@ -12,27 +23,29 @@ hr.purple{
   color: #000;
 }
 
-h1{
-  font-size: 250%;
-}
-
 img.header{
   max-width: 315px;
 }
 
-img{
-  max-width: 200px;
-}
 p.slogan{
   font-family:monospace;
   font-size:110%;
   color: gray;
 }
 
+
 a{
   text-decoration: none;
-  color: blue;
+  color: #494949;
   outline: 0 !important;
+}
+
+a.eventmobile{
+  display: none;
+}
+
+a.eventpc{
+  display: inline;
 }
 
 a.link{
@@ -44,16 +57,32 @@ a.link{
 
 a.link2{
   text-decoration: none;
-  font-size: 110%;
+  font-size: 120%;
   background-color: #484546;
   border-radius:3px;
   padding: 5px;
   margin-top:5px;
-  color: #14FF38;
+  color: #62FF79;
   font-family: monospace;
     outline: 0 !important;
 }
 
+a.filtro{
+  padding: 6px;
+  color: white;
+  margin:3px;
+  margin-bottom: 3px;
+  text-align: center;
+  font-size: 90%;
+  border: solid 1px white;
+  border-radius: 13px;
+}
+
+a.filtro:hover, a.filtro.active{
+  background-color:#484546;
+  border: solid 1px #62FF79;
+  color: #62FF79;
+}
 .dif {
   text-decoration: none;
   padding: 6px;
@@ -83,18 +112,18 @@ nav ul{
 nav ul li {
   display: inline-block;
   outline: 0 !important;
-  background:#62FF79;
+  background:#e09a2b;
   padding: 5px;
   font-family:arial;
   font-size: 135%;
-  color: #008F15;
-  border: solid 1px #62FF79;
+  color: #60353a;
+  border: solid 1px #60353a;
   border-radius: 10px;
 
 }
 nav ul li:hover{
-  background-color:#62FFA7;
-  border: solid 1px #008F15;
+  background-color:#e1b66a;
+  border: solid 1px #795f63;
 }
 
 nav ul li.active{
@@ -103,31 +132,28 @@ nav ul li.active{
   background-color: #2EFF4D;
 }
 section{
-  text-align: left;
-  background-color: white;
-  max-width:600px;
+  text-align: center;
+  background-color: #E8E8E8;
+  background-color: rgb(223, 223, 223, 0.7);
+  width: auto;
   border-radius: 9px;
   padding: 0.1px 10px;
   margin:0;
-  margin-top: 10px;
 }
 
 input[type=submit] {
   text-decoration: none;
-  font-size: 140%;
-  font-family: monospace;
-  padding: 5px;
+  font-size: 130%;
+  padding: 3px;
   color: #000;
-  background-color:#62FF79;
+  background-color: #DFDFDF;
   text-align: center;
-  border: none;
-  border-radius: 5px;
-  outline: 0px solid  #62FF79;
+  outline: 1px solid #797979;
 }
 
 
 input[type=submit]:hover {
-background-color: #00B6F0;
+background-color: #62FF79
 }
 
 input[type=url], select {
@@ -140,16 +166,12 @@ input[type=url], select {
     box-sizing: border-box;
 }
 input[type=text], select {
-    max-width: 100%;
-    text-align: center;
+    max-width: 300%;
     padding: 12px 20px;
     margin: 8px 0;
     display: inline-block;
-    border: 1px solid  #62FF79;
+    border: 1px solid #000;
     border-radius: 4px;
-    color: #00B6F0;
-    font-size: 100%;
-    background-color: #000;
     box-sizing: border-box;
 }
 
@@ -160,7 +182,7 @@ h2 {
 
 table{
   border-collapse: collapse;
-  max-width:300px;
+  width: 100%;
   font-size: 90%;
 }
 
@@ -196,8 +218,37 @@ tr:nth-child(even) {
 button {
     outline: 0 !important;
 }
+button.btn {
+  font-size: 95%;
+  border-radius: 10px;
+  background-color:#8C8C8C;
+  margin: 1.5px;
+  padding-bottom:1.3px;
+  padding-top:0.3px;
+  color: #DEDEDE;
+  border: none;
+  outline: 0 !important;
+}
 
+button.btn:hover{
+  background-color: #9E9E9E;
+  color: #DEDEDE;
+}
 
+button.btn.actived {
+  background-color:#00B6F0;
+  color: #004257;
+  font-size: 120%;
+  transition: 0s;
+  outline: 0 !important;
+}
+button.btn.activedo {
+  background-color:#62FF79;
+  color: #008F15;
+  font-size: 120%;
+  transition: 0s;
+  outline: 0 !important;
+}
 button.accordion {
     background-color: rgb(223, 223, 223, 0.8);
     color: #000;
@@ -222,12 +273,15 @@ button.accordion.active, button.accordion:hover {
 
 button.accordion2 {
     background-color: rgb(223, 223, 223, 0.8);
-    color: #000;
+    color: gray;
     cursor: pointer;
     padding: 5px;
     width: 100%;
     outline: 0 !important;
-    border: none;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 2px solid #e1b66a;
     text-align: left;
     outline: 1px solid #797979;
     font-size: 16px;
@@ -236,23 +290,21 @@ button.accordion2 {
 }
 
 button.accordion2.active, button.accordion2:hover {
-    background-color: rgb(98, 255, 121);
+    background-color: #e1b66a;
     color: #000;
     font-style: oblique;
 }
 
 button.accordion3 {
-  display: block;
-  align-self: center;
+  display: inline-block;
   background:#62FF79;
   padding: 5px;
-  width:auto;
+  width: 20%;
   font-family:arial;
   font-weight: bold;
-  font-size: 110%;
-  right:15px;
+  font-size: 115%;
   color: #008F15;
-  margin-bottom: 10px;
+  margin-bottom: 3px;
   border: solid 1px #62FF79;
   border-radius: 10px;
   transition: 0.4s;
@@ -260,55 +312,112 @@ button.accordion3 {
 }
 
 button.accordion3.active, button.accordion3:hover {
-  background-color:#00B6F0;
-  border: solid 1px #004257;
-  color: #004257;
+  background-color:#62FFA7;
+  border: solid 1px #008F15;
+}
+
+button.accordion4 {
+  display:grid;
+  background:#8C8C8C;
+  padding-bottom:1.3px;
+  text-align: center;
+  padding-top:0.3px;
+  width: auto;
+  font-size: 110%;
+  color: #DEDEDE;
+  margin-bottom: 3px;
+  border: none;
+  border-radius: 10px;
+  transition: 0.4s;
+  outline: 0;
+}
+
+
+button.accordion4.active{
+  background-color:#62FF79;
+  color: #008F15;
+  outline: 0 !important;
+}
+
+button.accordion4:hover {
+  background-color: #9E9E9E;
+  color: #DEDEDE;
 }
 
 button.caos{
   display: inline-block;
   background:#62FF79;
-  padding-bottom: 0px;
+  padding-bottom: 3px;
   padding-top: 3px;
   padding-left: 2px;
   outline: 0 !important;
   padding-right: 2px;
   border: solid 0px #62FF79;
   border-radius: 40px;
+  cursor:pointer;
 }
 button.caos:hover{
-  background-color:#EA69F2;
+  background-color:#00B6F0;
   border: solid 0px #000;
   transition: 1s;
 }
 
-div.Bbubble{
-  background-color: #171717;
-  color:#62FF79;
+div.ideacontainer{
+  display:block;
+}
+
+div.bubble{
+  background-color: #b2b2b2;
+  border-radius: 7px;
+}
+
+a.idea{
+  color: #62FF79
+}
+
+button.idea:hover {
+background-image: radial-gradient(#525252 , #404040);
+color:#00B6F0;
+-ms-transform: scale(1.09); /* IE 9 */
+ -webkit-transform: scale(1.09); /* Safari 3-8 */
+ transform: scale(1.09);
+}
+
+
+button.idea {
+  background-color: #404040;
+  color: #62FF79;
   font-family: monospace;
-  font-size: 12  0%;
-  border-radius: 21px;
-  padding: 7px;
-  margin:10px;
-  max-width: 315px;
+  border-radius: 60px;
   text-align: center;
+  border: none;
+  margin: 10px;
+  padding: 12px;
+  padding-top: 15px;
+  width: 120px;
+  height: 120px;
+  transition: transform .2s;
 }
 
-div.center {
-  text-align: center;
-}
 
-div.redes{
+div.filtrodiv {
+  background-color: #797979;
+  border-radius: 15px;
   display: inline-block;
-  margin-top: 15px;
-  margin-bottom: 15px;
+  color: white;
+  font-weight: bold;
+  padding-top:0px;
+  padding: 5px;
+  height:75px;
+  font-weight: bold;
 }
+
 div.panel {
     padding: 0px;
     padding-top: 7px;
     margin: 0px;
     display: none;
-    background-color:white;
+    background-color: rgb(223, 223, 223, 0.45);
 }
 
 div.portal{
@@ -324,6 +433,9 @@ background-color:#282828;
 background-size:16px 16px;
 border-radius: 10px;
 margin-top: 15px;
+margin-bottom: 15px;
+margin:5px;
+max-height:450px;
 }
 
 div.comblu{
@@ -347,7 +459,14 @@ div.comred{
   border-radius: 7px;
   text-align: center;
 }
+
 div.comgris{
+  background-color:#9E9E9E;
+  border-radius: 7px;
+  text-align: center;
+}
+
+.comhack{
   background-color:#282828;
   color: #00FF76;
   font-family: monospace;
@@ -359,32 +478,19 @@ div.comgris{
   text-align: left;
   font-size: 120%;
 }
-div.back{
+div.lang{
   position: fixed;
-  right:26%;
-  left:auto;
-  top:20px;
+  left:5px;
+  right:auto;
+  bottom:5px;
 }
 
-img.back{
-  max-width: 65px;
-  text-shadow: 0 0 3px #7E93B4,0 0 3px #7E93B4
+div.spacer{
+  display:none
 }
-
-img.redes{
+img.lang{
   max-width: 50px;
-}
-
-img.logo{
-  max-width: 300px;
-  float:right;
-  margin-bottom:10px;
-}
-
-iframe.logo{
-  max-width: 300px;
-  float:right;
-  margin-bottom:10px;
+  text-shadow: 0 0 3px #7E93B4,0 0 3px #7E93B4
 }
 
 .container{
@@ -433,42 +539,47 @@ audio{
   display:block;
   border-radius: 4px;
 }
-@media screen and (max-width: 620px){
-  div.back{
-    right:10px;
-    top:10px;
-    position:fixed;
-    }
-
-  section {
-    margin-top: 0px  ;
-  }
-}
 
 @media screen and (max-width: 499px){
   .container{
     width: auto;
   }
 
+  a.eventmobile{
+    display: inline;
+  }
+
+  a.eventpc{
+    display: none;
+
+
+  button.filt {
+    font-size: 80%;
+  }
+
+  button.btn:hover{
+    background-color:#00B6F0;
+    color: #004257;
+    outline: 0 !important;
+  }
+
+  button.idea:hover{
+    background-color:#00B6F0;
+    color: #004257;
+    outline: 0 !important;
+  }
+
+
+button.accordion3 {
+  width: 70%;
+}
+
   .container2{
     width: auto;
   }
-
-
-  img.geo{
-    width:100px;
+  img{
+    width:auto;
   }
-
-  img.logo{
-    float:none;
-    max-width: 80%;
-  }
-
-  iframe.logo{
-    float:none;
-    max-width: 95%;
-  }
-
   img.pablo{
     float:left;
   }
@@ -486,11 +597,15 @@ audio{
     height:auto;
     box-sizing: content-box;
 }
+
 }
 
 @media screen and (max-width: 315px){
   img.header{
     max-width: 280px;
+  }
+  button.filt {
+    font-size: 80%;
   }
   nav ul li{
     font-size: 115%;
