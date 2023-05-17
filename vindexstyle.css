@@ -141,6 +141,37 @@ section{
   margin:0;
 }
 
+section.am h1{
+  color:#66363D;
+  font-size:
+}
+
+section.pm h1{
+  color:#11488D;
+  font-size:
+}
+
+section.am {
+  text-align: center;
+  background-color: #F1CEA2;
+  background-color: rgb(241, 206, 162, 0.7);
+  width: auto;
+  border-radius: 9px;
+  padding: 0.1px 15px;
+  margin:20px 0px;
+}
+
+section.pm{
+  text-align: center;
+  background-color: #A2C5F1;
+  background-color: rgb(162, 197, 241, 0.7);
+  width: auto;
+  border-radius: 9px;
+  padding: 0.1px 15px;
+  margin:0;
+}
+
+
 input[type=submit] {
   text-decoration: none;
   font-size: 130%;
@@ -250,14 +281,14 @@ button.btn.activedo {
   outline: 0 !important;
 }
 button.accordion {
-    background-color: rgb(223, 223, 223, 0.8);
+    background-color: none;
     color: #000;
     cursor: pointer;
     outline: 0 !important;
     padding: 5px;
     width: 100%;
     border: none;
-    border-radius: 0px;
+    border-radius: 5px;
     text-align: center;
     outline: 1px solid #797979;
     font-size: 16px;
@@ -272,25 +303,27 @@ button.accordion.active, button.accordion:hover {
 }
 
 button.accordion2 {
-    background-color: rgb(223, 223, 223, 0.8);
-    color: gray;
+    background-color: rgb(255, 255, 255, 0.4);
+    color: black;
     cursor: pointer;
-    padding: 5px;
+    margin: 5px 5px;
+    padding: 10px;
     width: 100%;
     outline: 0 !important;
     border-top: none;
     border-left: none;
     border-right: none;
-    border-bottom: 2px solid #e1b66a;
+    border-bottom: 0px solid white;
     text-align: left;
+    border-radius: 5px;
     outline: 1px solid #797979;
-    font-size: 16px;
+    font-size: 18px;
     font-family: sans-serif;
     transition: 0.4s;
 }
 
 button.accordion2.active, button.accordion2:hover {
-    background-color: #e1b66a;
+    background-color: rgb(255, 255, 255, 0.8);
     color: #000;
     font-style: oblique;
 }
